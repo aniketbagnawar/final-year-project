@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>Intrusion</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/w3.css') }}">
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+  <h3 class="w3-bar-item">Menu</h3>
+  <!--a href="home" class="w3-bar-item w3-button">Home</a-->
+  <a href="sql" class="w3-bar-item w3-button">Sql Injection</a>
+  <a href="xss" class="w3-bar-item w3-button">XXS</a>
+  <a href="phishing" class="w3-bar-item w3-button">Phishing</a>
+  <a href="intrusion" class="w3-bar-item w3-button">Intrusion</a>
+  <!--a href="info" class="w3-bar-item w3-button">About The Project</a-->
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:25%">
+
+<div class="w3-container w3-teal">
+  <h1> Cyber Attack Detection Using Machine Learning And Deep Learning</h1>
+</div>
+
+{% block content %}
+{% endblock %}
+
+
+
+<!-- Footer-->
+<div class="w3-container w3-teal">
+  <div class="w3-container w3-cell w3-mobile" style="width:85%">
+    <h5>Developed By</h5>
+    <div class="w3-container w3-cell">
+      <p>Aashutosh Bhardwaj </p>
+      <p>Saheb Singh Chandok</p>
+    </div>
+    <div class="w3-container w3-cell">
+      <p>Aniket Bagnawar</p>
+      <p>Shubham Mishra</p>
+    </div>
+  </div>
+  <div class="w3-container w3-cell w3-mobile">
+    <h5>Guided By</h5>
+    <p>Prof.Deepak Uplonkar</p>
+  </div>
+  </div>
+
+</div>
+      
+</body>
+</html>

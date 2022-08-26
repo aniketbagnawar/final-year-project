@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="w3-card-4 w3-margin">
+
+    <header class="w3-container w3-blue">
+      <h1>Test The Packet for Intrusion</h1>
+    </header>
+
+
+    <form class="w3-container w3-margin" action="" method="post" enctype="multipart/form-data">
+
+      
+      <label class="w3-text-teal"><b>Enter Test Packet</b></label>
+      <textarea class="w3-input w3-border w3-light-grey" rows="10" cols="47" name="packet" placeholder="Type Here..!!">{% if packet %} {{packet}} {% endif %}</textarea>
+      <br>
+     
+
+        <input class="w3-btn w3-blue-grey" name="sub" type="submit" value="Submit"/>
+        <br><br>
+   
+       
+    </form>
+
+    <br>
+    <footer class="w3-container w3-blue">
+      <h5></h5>
+    </footer>
+    
+    </div>
+
+    <div class="w3-card-4 w3-margin">
+
+      <header class="w3-container w3-blue">
+        <h1>KNN Prediction</h1>
+      </header>
+      
+      <div class="w3-container">
+        <p>
+         {{ result1 }}
+      </p>
+      </div>
+      
+      <footer class="w3-container w3-blue">
+        <h5></h5>
+      </footer>
+      
+      </div>    
+
+      <div class="w3-card-4 w3-margin">
+
+        <header class="w3-container w3-blue">
+          <h1>BNB Prediction</h1>
+        </header>
+        
+        <div class="w3-container">
+          <p>
+           {{ result2 }}
+        </p>
+        </div>
+        
+        <footer class="w3-container w3-blue">
+          <h5></h5>
+        </footer>
+        
+        </div>  
+
+        <div class="w3-card-4 w3-margin">
+
+          <header class="w3-container w3-blue">
+            <h1>DTC Prediction</h1>
+          </header>
+          
+          <div class="w3-container">
+            <p>
+             {{ result3 }}
+          </p>
+          </div>
+          
+          <footer class="w3-container w3-blue">
+            <h5></h5>
+          </footer>
+          
+          </div>  
+
+    {% endblock %}
